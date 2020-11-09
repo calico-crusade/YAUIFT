@@ -1,5 +1,5 @@
-const aboutVue = {
-    template: `<div class="container center">
+<template>
+<div class="container center">
     <section>
         <h1>About Vue</h1>
         <p>Vue is a UI development library written in JavaScript. It was made by Evan You!</p>
@@ -11,5 +11,5 @@ const aboutVue = {
         </ul>
         <p>You can find either official or community made libraries to provide everything else!</p>
     </section>
-</div>`
-};
+</div>
+</template>

@@ -64,7 +64,7 @@
     <template id="todo-item-template">
         <div class="todo">
             <div class="name">
-                <router-link :to="'/todos/' + todo.id">{{ todo.name }}</a>
+                <router-link :to="'/todos/' + todo.id">{{ todo.name }}</router-link>
             </div>
             <div class="state">
                 <select v-model="todo.stateId" v-on:change="stateChanged()">
