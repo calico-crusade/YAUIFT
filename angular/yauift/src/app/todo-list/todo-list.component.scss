@@ -1,0 +1,52 @@
+.todos {
+    width: 500px;
+
+    .input-section {
+        display: flex;
+        margin-bottom: 5px;
+
+        input {
+            border-radius: 5px;
+            padding: 5px;
+            outline: none;
+            border: none;
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        button {
+            border-radius: 5px;
+            padding: 5px 15px;
+            outline: none;
+            background-color: #1845A5;
+            border: 1px solid #fff;
+            cursor: pointer;
+        }
+
+        select {
+            margin-left: 5px;
+        }
+    }
+
+    .todos-section {
+        max-height: 500px;
+        overflow-y: auto;
+
+        .todos-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            .filter {
+                display: flex;
+                margin-bottom: 5px;
+
+                label {
+                    margin-left: 5px;
+                    flex: 1;
+
+                }
+            }
+        }
+    }
+}

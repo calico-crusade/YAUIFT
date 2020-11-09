@@ -1,0 +1,26 @@
+<div class="container center">
+    <div class="todos">
+        <section class="input-section">
+            <input type="text" [(ngModel)]="todoName" placeholder="Todo Name..." />
+            <button (click)="addTodo()">
+                Add Todo
+            </button>
+        </section>
+        <section class="todos-section">
+            <ul class="todos-list">
+                <li class="filter">
+                    <label>Filter todo list: </label>
+                    <select [(ngModel)]="filteredStateId">
+                        <option [value]="0">All</option>
+                        <option *ngFor="let state of states" [value]="state.id">
+                            {{ state.name }}
+                        </option>
+                    </select>
+                </li>
+                <li *ngFor="let todo of filteredTodos">
+                    <app-todo-item [todo]="todo"></app-todo-item>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container center">
+    <section *ngIf="todo">
+        <h1>{{ todo.name }}</h1>
+        <p>Current State: {{ state.name }} - {{ state.description }}</p>
+        <select [(ngModel)]="stateId" (change)="stateChanged()">
+            <option *ngFor="let state of states" [value]="state.id">
+                {{ state.name }}
+            </option>
+        </select>
+    </section>
+    <section *ngIf="!todo">
+        <h1>Loading...</h1>
+    </section>
+</div>

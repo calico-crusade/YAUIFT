@@ -1,0 +1,30 @@
+{
+  "name": "yauift-server",
+  "version": "1.0.0",
+  "description": "The backend-server for YAUIFT",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calico-crusade/YAUIFT.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "yauift"
+  ],
+  "author": "Cardboard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calico-crusade/YAUIFT/issues"
+  },
+  "homepage": "https://github.com/calico-crusade/YAUIFT#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "underscore": "^1.11.0"
+  },
+  "type": "module"
+}

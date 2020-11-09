@@ -1,0 +1,12 @@
+<div class="todo">
+    <div class="name">
+        <a [routerLink]="['/todos/' + todo.id]">{{ todo.name }}</a>
+    </div>
+    <div class="state">
+        <select [(ngModel)]="todo.stateId" (change)="stateChanged()">
+            <option *ngFor="let state of states" [value]="state.id">
+                {{ state.name }}
+            </option>
+        </select>
+    </div>
+</div>
