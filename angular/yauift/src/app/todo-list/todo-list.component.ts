@@ -51,6 +51,7 @@ export class TodoListComponent implements OnInit {
             this.todos.push(todo);
 
             this.filteredStateId = 0;
+            this.todoName = '';
 
         } catch (error) {
             alert('An error occurred: ' + error);

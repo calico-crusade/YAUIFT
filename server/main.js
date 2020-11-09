@@ -69,13 +69,11 @@ app.post('/todos', (req, res) => {
     }
 
     const sanitizedTodo = {
-        id: _.max(todos, t => t.id) + 1,
+        id: _.max(todos, t => t.id).id + 1,
         name: incomingTodo.name.toString(),
         stateId: stateId
     };
-
     todos.push(sanitizedTodo);
-
     res.json(sanitizedTodo);
 });
 

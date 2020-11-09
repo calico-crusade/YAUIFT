@@ -1,0 +1,13 @@
+.todo {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.todo .name {
+	flex: 1;
+	padding: 0 5px;
+}
+
+.todo .state {
+	margin-left: 5px;
+}
