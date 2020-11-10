@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
+
+body {
+	font-family: 'DM Mono', monospace;
+    background-color: #011627;
+    color: #fff;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+input, button {
+	font-size: 1rem;
+	font-family: 'DM Mono', monospace;
+}
+
+select {
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.container.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.container.rows {
+	flex-flow: column;
+}
+
+.container.rows .push {
+	margin-top: auto;
+}
+
+.container.columns {
+	flex-flow: row;
+}
+
+.container.columns .push {
+	margin-left: auto;
+}
+
+.container .fill {
+	flex: 1;
+}
+
+.container .push-right {
+	margin-left: auto;
+}
+
+.container .push-left {
+	margin-right: auto;
+}
+
+.container .push-top {
+	margin-bottom: auto;
+}
+
+.container .push-bottom {
+	margin-top: auto;
+}
