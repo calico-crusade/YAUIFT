@@ -65,7 +65,7 @@
 <!-- svelte-ignore a11y-no-onchange -->
 <div class="container center">
     {#if !loading}
-    <section v-if="!loading">
+    <section>
         <h1>{todo.name}</h1>
         <p>Current State: {state.name} - {state.description}</p>
         <select bind:value={stateId} on:change={() => stateChanged()}>
@@ -77,7 +77,7 @@
         </select>
     </section>
     {:else}
-    <section v-else>
+    <section>
         <h1>Loading...</h1>
     </section>
     {/if}
